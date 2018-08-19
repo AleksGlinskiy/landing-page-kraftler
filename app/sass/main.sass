@@ -1,0 +1,577 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+//customizer sass BEGIN
+
+.wrapper
+  overflow-x: hidden
+
+section
+  .section-title
+    margin-bottom: 40px
+    display: inline-block
+    font-size: 2rem
+    line-height: 1.2
+    position: relative
+    z-index: 1
+    &:after
+      content: ''
+      display: block
+      width: 22px
+      height: 4px
+      background: $info
+
+
+.header
+  padding-top: 20px
+  position: relative
+  z-index: 1
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #ededed)
+    margin-top: 20px
+  #mobile-menu
+    float: right
+    border: 0
+    background: #ffffff
+    border-radius: 3px
+    width: 45px
+    height: 30px
+    color: $info
+    display: none
+    position: relative
+    font-size: 0
+    cursor: pointer
+    &:focus
+      outline: 0
+      border-color: rgba(0, 169, 157, 0)
+      box-shadow: 0 0 0 3px rgba(0, 169, 157, .3)
+    &:after
+      content: ''
+      display: block
+      background: #1d2124
+      width: 30px
+      height: 2px
+      position: absolute
+      bottom: 14px
+      left: 7px
+    &:before
+      content: ''
+      display: block
+      width: 30px
+      height: 16px
+      border-top: 2px solid #1d2124
+      border-bottom: 2px solid #1d2124
+      position: absolute
+      bottom: 7px
+      left: 7px
+  .logo
+    margin-bottom: 0
+    font-size: 0
+    &-link
+      display: inline
+      float: left
+    img
+      font-size: 12px
+  #menu
+    width: 100%
+  .navigation
+    float: left
+    padding-top: 2px
+    &-list
+      padding: 0
+      margin: 0
+      list-style-type: none
+      &:after
+        content: ''
+        display: table
+        clear: both
+      &__item
+        float: left
+        margin-right: 30px
+        a
+          text-decoration: none
+          position: relative
+          &:focus
+            outline: none
+            &:after
+                width: 60%
+          &:after
+            content: ''
+            display: block
+            width: 0
+            height: 1px
+            background: $info
+            position: absolute
+            left: 0
+            bottom: 0
+            transition: width .5s
+          &:hover
+            &:after
+              width: 100%
+  .lang
+    list-style-type: none
+    padding: 0
+    margin: 0
+    float: right
+    li
+      margin-left: 10px
+      display: inline-block
+      &:first-child
+        margin-left: 0
+      a
+        display: inline-block
+        width: 25px
+        height: 25px
+        background: #fff
+        border-radius: 3px
+        box-sizing:  border-box
+        border: solid 1px rgba(0,0,0,.1)
+        text-align: center
+        transition: all .5s
+        &:focus
+          outline: 0
+          box-shadow: 0 0 0px 2px rgba(0, 169, 157, .3)
+        &:hover
+          background: rgba(0, 169, 157, .5)
+        &:hover
+          text-decoration: none
+          background: $info
+          color: #ffffff
+.main
+  padding-bottom: 215px
+  &:before
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    background-image: url("../img/back-header.jpg")
+    background-repeat: no-repeat
+    background-position: right top
+    background-size: 40%
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    margin-top: 20px
+  .col-md-6
+    margin-top: 100px
+    h2
+      font-size: 2.2rem
+      margin-bottom: 40px
+      font-weight: normal
+    a
+      margin-right: 15px
+
+
+.about
+  text-align: center
+  position: relative
+  margin: 50px 0
+  padding: 50px 0
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: -20px
+    left: -25%
+    width: 150%
+    bottom: -60px
+    background: #f9f9f9
+    border-radius: 50% 100% 50% 100%
+  .row
+    text-align: left
+  p
+    color: #393939
+    line-height: 1.8
+
+
+.product
+  padding-top: 60px
+  text-align: center
+  .section-title
+    margin-top: 30px
+  .ctn-slider
+    position: relative
+    margin-bottom: 60px
+  .slider
+    max-height: 335px
+    overflow: hidden
+    &__item
+      position: relative
+      height: 335px
+      float: left
+      &:focus
+        outline: none
+      .image
+        width: 480px
+        position: relative
+      figure
+        width: 100%
+        img
+          width: 100%
+          height: auto
+      .description
+        position: absolute
+        left: 400px
+        top: 70px
+        background: #ffffff
+        box-shadow: 0 0 40px rgba(0, 0 ,0 , .05)
+        width: 380px
+        height: 235px
+        text-align: left
+        padding: 20px 25px
+        h3
+          font-size: 1rem
+        ul
+          list-style-type: none
+          padding: 0
+          margin: 0
+          padding-left: 30px
+          margin-top: 15px
+          li
+            display: block
+            margin-bottom: 10px
+
+        a
+          text-decoration: none
+          position: relative
+          &:focus
+            outline: none
+            &:after
+              width: 60%
+          &:after
+            content: ''
+            display: block
+            width: 0
+            height: 1px
+            background: $info
+            position: absolute
+            left: 0
+            bottom: 0
+            transition: width .5s
+          &:hover
+            &:after
+              width: 100%
+
+      .title
+        position: absolute
+        top: 0
+        right: 0
+    &-arrows
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      width: 480px
+      .arrow
+        position: absolute
+        border: 0px
+        background: rgba(0, 169, 157, .8)
+        color: #ffffff
+        width: 50px
+        height: 35px
+        font-size: 0
+        cursor: pointer
+        &:focus
+          outline: 0
+          box-shadow: 0 0 0px 2px rgba(0, 169, 157, .3)
+        &:hover
+          background: rgba(0, 169, 157, .5)
+        &:after
+          content: ''
+          position: absolute
+          top: 12px
+          right: 19px
+          display: block
+          width: 10px
+          height: 10px
+          border: solid 1px #ffffff
+          transform: rotate(45deg)
+        &.arrow-next
+          top: 0
+          right: -50px
+          &:after
+            border-left-color: rgba(0, 0, 0, 0)
+            border-bottom-color: rgba(0, 0, 0, 0)
+        &.arrow-prev
+          top: 0
+          right: 0
+          &:after
+            border-right-color: rgba(0, 0, 0, 0)
+            border-top-color: rgba(0, 0, 0, 0)
+
+    &-title
+      position: absolute
+      text-transform: uppercase
+      top: 0
+      right: 43px
+      font-weight: bold
+      &.s
+        right: 	auto
+        left: 50px
+
+    &#slider-s
+      .slider__item
+        .image
+          right: 0
+          top: 0
+          position: absolute
+        .description
+          left: 50px
+          top: 70px
+
+  .slider-arrows.s
+    width: 345px
+
+
+.contact
+  padding: 60px 0
+  text-align: center
+  position: relative
+  margin-top: 60px
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: -20px
+    left: -25%
+    width: 150%
+    bottom: 0
+    background: #f9f9f9
+    border-radius: 100% 50% 0% 0%
+  .section-title
+    margin-bottom: 10px
+  .sub-title
+    position: relative
+    z-index: 1
+    color: #cdcdcd
+  form
+    margin-top: 20px
+    textarea
+      width: 100%
+      min-height: 200px
+      height: 200px
+      padding: 25px
+      border: 1px solid #e3e3e3
+      border-radius: 28px
+      resize: none
+      margin-bottom: 25px
+      transition: box-shadow .15s ease-in-out, border-color .15s
+      &::placeholder
+        color: #cfcece
+      &:focus
+        outline: 0
+        border-color: rgba(0, 169, 157, 0)
+        box-shadow: 0 0 0 3px rgba(0, 169, 157, .3)
+    input
+      width: 100%
+      padding: 10px 20px
+      border: 1px solid #e3e3e3
+      border-radius: 28px
+      margin-bottom: 25px
+      transition: box-shadow .15s ease-in-out, border-color .15s
+      &::placeholder
+        color: #cfcece
+      &:focus
+        outline: 0
+        border-color: rgba(0, 169, 157, 0)
+        box-shadow: 0 0 0 3px rgba(0, 169, 157, .3)
+  .phone
+    text-align: left
+    a
+      text-decoration: none
+      position: relative
+      display: inline-block
+      margin-bottom: 3px
+      &:focus
+        outline: none
+        &:after
+          width: 60%
+      &:after
+        content: ''
+        display: block
+        width: 0
+        height: 1px
+        background: $info
+        position: absolute
+        left: 0
+        bottom: 0
+        transition: width .5s
+      &:hover
+        &:after
+          width: 100%
+
+
+.footer
+  padding: 20px
+  position: relative
+  z-index: 1
+  background: #f9f9f9
+  border-top: solid 1px #f1f1f1
+  .link
+    display: inline-block
+  .logo
+    margin-bottom: 0
+    img
+      filter: grayscale(100%)
+      opacity: .5
+  .navigation
+    &-list
+      list-style-type: none
+      padding: 0
+      margin: 0
+      &:after
+        content: ''
+        display: table
+        clear: both
+      &__item
+        float: right
+        margin-left: 20px
+        a
+          text-decoration: none
+          position: relative
+          &:focus
+            outline: none
+            &:after
+              width: 60%
+          &:after
+            content: ''
+            display: block
+            width: 0
+            height: 1px
+            background: $info
+            position: absolute
+            left: 0
+            bottom: 0
+            transition: width .5s
+          &:hover
+            &:after
+              width: 100%
+
+.show-product
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  background: rgba(0, 169, 157, 0.5)
+  z-index: 999
+  align-items: center
+  justify-content: center
+  color: #fff
+  display: none
+  visibility: hidden
+  opacity: 0
+  &.open
+    display: flex
+    visibility: visible
+    opacity: 1
+    animation-name: example
+    animation-duration: .5s
+  .ctn-slide-product
+    position: relative
+    max-width: 680px
+    width: 50%
+    #btn-show-product
+      position: absolute
+      top: 0
+      right: -30px
+      width: 30px
+      height: 30px
+      border: 0
+      color: #fff
+      font-size: 0
+      cursor: pointer
+      background: rgba(0, 169, 157, .3)
+      transition: transform .5s
+      &:focus
+        outline: 0
+        box-shadow: 0 0 0px 2px rgba(0, 169, 157, .3)
+      &:hover
+        background: rgba(0, 169, 157, .5)
+      &:after
+        content: ''
+        display: block
+        width: 25px
+        position: absolute
+        top: 14px
+        right: 2px
+        height: 2px
+        background: #fff
+        transform: rotate(45deg)
+      &:before
+        content: ''
+        display: block
+        width: 25px
+        position: absolute
+        top: 14px
+        left: 3px
+        height: 2px
+        background: #fff
+        transform: rotate(-45deg)
+    .slide-product
+      &__item
+        float: left
+        &:focus
+          outline: none
+        figure
+          margin: 0
+          img
+            max-width: 100%
+            width: 100%
+            height: auto
+        &:first-child
+          min-height: 382px
+      .slick-arrow
+        position: absolute
+        right: 0
+        bottom: 46%
+        height: 30px
+        display: block
+        width: 50px
+        border: 0
+        cursor: pointer
+        background: rgba(0, 169, 157, 0.8)
+        color: #fff
+        font-size: 0
+        &:focus
+          outline: 0
+          box-shadow: 0 0 0px 2px rgba(0, 169, 157, .3)
+        &:hover
+          background: rgba(0, 169, 157, .5)
+        &:after
+          content: ''
+          display: block
+          width: 12px
+          height: 12px
+          position: absolute
+          right: 19px
+          top: 9px
+          border: 1px solid #fff
+          transform: rotate(45deg)
+      .slick-prev
+        left: 0
+        right: auto
+        z-index: 1
+        &:after
+          border-top: 0
+          border-right: 0
+      .slick-next
+        &:after
+          border-bottom: 0
+          border-left: 0
+
+  @keyframes example
+    0%, 10%
+      opacity: 0
+    100%
+      opacity: 1
+
+//customizer sass END
+
+@import "media" // Always at the end

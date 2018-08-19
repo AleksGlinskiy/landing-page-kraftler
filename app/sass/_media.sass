@@ -1,0 +1,180 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  &#slider-s
+    .slider__item
+      .image
+        right: 0
+        top: 0
+        position: absolute
+      .description
+        left: 60px
+        top: 50px
+
+  .main
+    &:before
+      background-size: 49%
+
+  .product
+    .slider-title
+      right: 65px
+    .slider-arrows.s
+      width: 370px
+
+// ≥992px
++media-breakpoint-down(md)
+  .main
+    padding-bottom: 100px
+    .col-md-6
+      margin-top: 40px
+      h2
+        font-size: 1.6rem
+      a
+        padding: 5px 20px
+
+  section
+    .section-title
+      font-size: 1.6rem
+
+  .product
+    .slider__item
+      .description
+        left: 280px
+    .slider-title
+      right: 30px
+    .slider-arrows.s
+      width: 210px
+
+  .show-product
+    .ctn-slide-product
+      width: 90%
+
+// ≥768px
++media-breakpoint-down(sm)
+  .header
+    background: #ffffff
+    padding-top: 10px
+    &:after
+      margin-top: 10px
+    #mobile-menu
+      display: block
+    #menu
+      display: none
+      position: absolute
+      left: 0
+      top: 12px
+      right: 0
+      background: #ffffff
+      padding: 20px
+    .navigation
+      float: none
+      &-list
+        text-align: center
+        &__item
+          float: none
+          margin-right: 0
+          margin-bottom: 15px
+    .lang
+      float: none
+      text-align: center
+  .main
+    text-align: center
+    &:before
+      background-position: center right
+      background-size: 80%
+
+  section
+    .section-title
+      font-size: 1.4rem
+
+  .about
+    margin: 30px 0
+    padding: 30px 0
+    padding-bottom: 0
+    &:before
+      border-radius: 0
+
+  .product
+    padding-top: 30px
+    .ctn-slider
+      margin-bottom: 30px
+    .slider
+      max-height: none
+      &#slider-s
+        .slider__item
+          .image
+            position: static
+          .description
+            left: 50px
+            top: 70px
+    .slider__item
+      height: auto
+      .image
+        margin-right: 0
+        width: auto
+      .description
+        position: static
+        width: 100%
+        height: auto
+        box-shadow: 0 0 0
+    .slider-title
+      top: -25px
+      right: 0
+      &.s
+        left: 0
+
+    .slider-arrows
+      width: 50px
+      &.s
+        width: 50px
+
+  .contact
+    padding: 30px 0
+    .phone
+      text-align: center
+    &:before
+      border-radius: 0
+
+  .footer
+    .link
+      display: block
+      text-align: center
+      margin-bottom: 15px
+    .navigation
+      &-list
+        text-align: center
+        &__item
+          float: none
+          display: inline-block
+          margin: 0 10px
+  .show-product
+    .ctn-slide-product
+      width: 90%
+      #btn-show-product
+        right: 0
+        top: -30px
+      .slide-product
+        &__item
+          &:first-child
+            min-height: 220px
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
